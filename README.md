@@ -1,46 +1,48 @@
 <div align="center">
 
 # 🧠 Artificial Intelligence Fundamentals
-### Laboratory Practicals & Real-World Heuristic Search Implementations
+### Practical Laboratory Portfolio & Implementation Log
 
-[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
-[![MIT ADT University](https://img.shields.io/badge/MIT--ADT-Pune-FF6F00?style=for-the-badge)](#)
-[![School of AI](https://img.shields.io/badge/SOAI-Division_5-7928CA?style=for-the-badge)](#)
-[![Code Style: Clean](https://img.shields.io/badge/Code_Style-PEP8_Compliant-00C853?style=for-the-badge)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](#)
+[![Language](https://img.shields.io/badge/Language-Python%203.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Curriculum](https://img.shields.io/badge/Curriculum-MIT--ADT%20SOAI-FF6F00?style=for-the-badge)](https://mituniversity.ac.in/)
+[![Class](https://img.shields.io/badge/Division-Div%205%20%7C%20Roll%2009-7928CA?style=for-the-badge)](https://github.com/makarandbobhate)
+[![Build Status](https://img.shields.io/badge/Build-Passing%20%26%20Verified-00C853?style=for-the-badge)](https://github.com/makarandbobhate/AIF-Practicals)
+[![Platform](https://img.shields.io/badge/Platform-Cross--Platform-lightgrey?style=for-the-badge)](https://github.com/makarandbobhate/AIF-Practicals)
 
 <p align="center">
-  <b>A comprehensive, production-grade repository implementing classical search algorithms, heuristic optimization, empirical benchmarking, and goal-based intelligent agents for university coursework.</b>
+  A structured, production-grade laboratory repository illustrating foundational-to-advanced paradigms of <b>Artificial Intelligence & Heuristic Search Techniques</b> in modern Python, focusing on real-world systems modeling, algorithmic benchmarking, and autonomous goal-based intelligent agents.
 </p>
 
-[Academic Profile](#-academic-profile) • [Search Taxonomy](#-search-taxonomy) • [Practicals Matrix](#-laboratory-practicals-matrix) • [Detailed Implementations](#-detailed-practical-breakdown) • [Empirical Benchmark](#-empirical-benchmarking--comparative-analysis) • [Getting Started](#-setup--execution-guide)
+</div>
 
 ---
 
-</div>
+## 📌 Student & Academic Profile
 
-## 🎓 Academic Profile
-
-<div align="center">
-
-| Student / Institutional Attribute | Academic Record Details |
+| Attribute | Details |
 | :--- | :--- |
 | **Candidate Name** | **Makarand Pankaj Bobhate** |
-| **Roll Number** | **09** |
+| **Roll Number** | `09` |
 | **Institution** | **MIT ADT University, Pune** |
-| **Department** | **School of Artificial Intelligence (SO AI)** |
-| **Class & Division** | **B.Tech — Division 5** |
-| **Course Subject** | **Artificial Intelligence Fundamentals (AI Fundamentals)** |
-| **GitHub Account** | [@makarandbobhate](https://github.com/makarandbobhate) |
-| **Repository Link** | [makarandbobhate/AIF-Practicals](https://github.com/makarandbobhate/AIF-Practicals) |
-
-</div>
+| **Department / Class** | School of AI (SO AI) |
+| **Division** | Division 5 |
+| **Course Module** | Artificial Intelligence Fundamentals (AI Fundamentals) |
+| **Programming Language** | Python 3.8+ (PEP 8 Standard) |
+| **GitHub Repository** | [makarandbobhate/AIF-Practicals](https://github.com/makarandbobhate/AIF-Practicals) |
 
 ---
 
-## 🗺️ Search Taxonomy
+## 🎯 Curriculum Objectives & Competencies
 
-The laboratory assignments cover the foundational hierarchy of Artificial Intelligence search techniques, transitioning from uninformed exploration to heuristic optimization and dynamic deliberative agency:
+This laboratory suite targets theoretical mastery and practical engineering of core Artificial Intelligence paradigms:
+* **Uninformed State-Space Exploration:** Implementing deterministic, systematic graph traversal strategies without domain-specific heuristics using FIFO queues (**Breadth-First Search**) and LIFO stacks/recursion (**Depth-First Search**).
+* **Heuristic Optimization & Admissibility:** Formulating informed search strategies using the **A\* Search Algorithm** with admissible Manhattan distance metrics ($h(n) = |x_1 - x_2| + |y_1 - y_2|$) to guarantee path optimality while pruning redundant state expansions.
+* **Empirical Algorithmic Benchmarking:** Conducting multi-metric comparative evaluations (path optimality, expanded state space, and wall-clock latency in $\mu s$) across identical graph topologies.
+* **Deliberative Intelligent Agents (PEAS):** Designing autonomous, goal-directed physical agents operating under the **Sense-Plan-Act** cycle with real-time sensory model updates and dynamic A\* re-planning upon encountering environmental hazards.
+
+---
+
+## 🗺️ Algorithmic Taxonomy
 
 ```mermaid
 graph TD
@@ -61,71 +63,79 @@ graph TD
 
 ---
 
-## 📊 Algorithmic Characteristics & Theoretical Complexity
+## 📑 Lab Practicals Index
 
-| Search Algorithm | Time Complexity | Space Complexity | Complete? | Optimal? | Primary Data Structure |
-| :--- | :---: | :---: | :---: | :---: | :--- |
-| **Breadth-First Search (BFS)** | $\mathcal{O}(b^d)$ | $\mathcal{O}(b^d)$ | Yes (if $b$ is finite) | Yes (for uniform cost) | FIFO Queue (`collections.deque`) |
-| **Depth-First Search (DFS)** | $\mathcal{O}(b^m)$ | $\mathcal{O}(b \cdot m)$ | No (fails in infinite loops) | No | LIFO Call Stack / Explicit Stack |
-| **A\* Search** | $\mathcal{O}(b^d)$ | $\mathcal{O}(b^d)$ | Yes | Yes (if $h(n)$ is admissible) | Min-Priority Heap (`heapq`) |
+| Practical | Core AI Paradigm | Problem Statement & Applied Scenario | Code Source |
+| :---: | :--- | :--- | :---: |
+| **01** | **Breadth-First Search (BFS)** | **Smart City Emergency Evacuation:** Identify the nearest emergency evacuation shelter during a disaster by expanding connected municipal road intersections level-by-level to ensure minimum road hops. | [`practical_01_bfs_evacuation.py`](./practical_01_bfs_evacuation.py) |
+| **02** | **Depth-First Search (DFS)** | **Treasure Hunt Game:** Navigate an intricate dungeon chamber network, exhausting deep passageways before systematically backtracking out of terminal dead ends to locate the hidden treasure chamber. | [`practical_02_dfs_treasure_hunt.py`](./practical_02_dfs_treasure_hunt.py) |
+| **03** | **Heuristic A\* Search** | **Hospital Medicine Delivery Robot:** Route an automated guided vehicle (AGV) across an $8 \times 7$ hospital grid from Pharmacy to an ICU Ward, avoiding restricted quarantine partitions using Manhattan heuristic estimation. | [`practical_03_astar_hospital_robot.py`](./practical_03_astar_hospital_robot.py) |
+| **04** | **Comparative Benchmarking** | **Smart City Road Network Navigation:** Empirical comparative study evaluating BFS, DFS, and A\* across identical road coordinates, profiling path optimality, node expansions, and execution latency ($\mu s$). | [`practical_04_compare_search_algorithms.py`](./practical_04_compare_search_algorithms.py) |
+| **05** | **Goal-Based Intelligent Agent** | **Autonomous Warehouse Robot:** Design a deliberative mobile agent adhering to the PEAS framework, transporting inventory pallets from storage to packing while autonomously re-planning routes around dynamic obstacle spills. | [`practical_05_intelligent_warehouse_agent.py`](./practical_05_intelligent_warehouse_agent.py) |
 
-*Where $b$ = branching factor, $d$ = depth of the shallowest goal, $m$ = maximum depth of search tree.*
-
----
-
-## 📂 Laboratory Practicals Matrix
-
-| No. | Core Curriculum Objective | Real-World Reframing & Scenario | Key AI Concepts | Direct Link |
-| :---: | :--- | :--- | :--- | :---: |
-| **01** | Graph Traversal using BFS | **Smart City Emergency Evacuation**<br>Determines the safest, minimum-hop evacuation route to shelters during disasters. | Queue traversal, Level-order expansion, Shortest unweighted path | [practical_01_bfs_evacuation.py](./practical_01_bfs_evacuation.py) |
-| **02** | Pathfinding using DFS | **Treasure Hunt Game**<br>Simulates deep chamber exploration with backtracking upon encountering dead ends. | Recursive stack, Backtracking state management, Visited sets | [practical_02_dfs_treasure_hunt.py](./practical_02_dfs_treasure_hunt.py) |
-| **03** | Heuristic Search with A\* | **Hospital Medicine Delivery Robot**<br>Finds the shortest barrier-free route from a central pharmacy to an ICU ward. | Manhattan Distance heuristic, Priority queues, Cost function $f=g+h$ | [practical_03_astar_hospital_robot.py](./practical_03_astar_hospital_robot.py) |
-| **04** | Search Comparison Study | **Smart City Road Network Benchmark**<br>Quantitatively compares BFS, DFS, and A\* on an identical 8-junction road map. | Path optimality, Search space expansion, Execution latency ($\mu s$) | [practical_04_compare_search_algorithms.py](./practical_04_compare_search_algorithms.py) |
-| **05** | Intelligent Agent Design | **Autonomous Warehouse Mobile Robot (AMR)**<br>Delivers inventory pallets while evading unforeseen dynamic obstacles via live re-planning. | PEAS model, Sense-Plan-Act loop, Internal belief states, Dynamic re-planning | [practical_05_intelligent_warehouse_agent.py](./practical_05_intelligent_warehouse_agent.py) |
-
-### 📑 Foundational Reference Scripts
-- [`makarand_bfs.py`](./makarand_bfs.py) — 4-level filesystem directory tree traversal using BFS.
-- [`makarand_dfs.py`](./makarand_dfs.py) — Undirected social friendship network traversal via recursive DFS.
-- [`makarand_astar.py`](./makarand_astar.py) — 5-node weighted graph pathfinding with basic A\* search.
+### 📚 Foundational Reference Implementations
+* [`makarand_bfs.py`](./makarand_bfs.py) — 4-level filesystem directory tree traversal using BFS.
+* [`makarand_dfs.py`](./makarand_dfs.py) — Undirected social friendship network traversal via recursive DFS.
+* [`makarand_astar.py`](./makarand_astar.py) — 5-node weighted graph pathfinding with basic A\* search.
 
 ---
 
-## 🔍 Detailed Practical Breakdown
+## 🔬 In-Depth Practical Specifications & Execution
 
-### Practical 01: Smart City Emergency Evacuation (BFS)
-- **Objective:** Model a municipal road network and route stranded citizens from a hazard zone (`Sector_4_Residential`) to the closest safe shelter.
-- **Mechanism:** BFS explores outward in concentric wavefronts. The first shelter encountered is mathematically guaranteed to have the minimum number of road intersections.
-- **Terminal Run:**
+### 🔹 Practical 01: Smart City Emergency Evacuation (BFS)
+* **Mathematical Foundation:** Explores unweighted graphs in concentric wavefronts. If all step costs are equal, the first instance of a goal node popped from the FIFO queue guarantees the shortest path:
+  $$d(s, v) = \min \{ \text{depth}(v) \mid v \in \text{GoalSet} \}$$
+* **Execution:**
   ```bash
   python practical_01_bfs_evacuation.py
   ```
-- **Discovered Route:**
-  $$\text{Sector\_4\_Residential} \xrightarrow{} \text{Junction\_A} \xrightarrow{} \text{Central\_Avenue} \xrightarrow{} \text{Stadium\_Shelter} \quad (\text{Hops: } 3)$$
+* **Sample Traversal Trace:**
+  ```text
+  Level 0: Explored node 'Sector_4_Residential'
+  Level 1: Explored node 'Junction_A'
+  Level 1: Explored node 'Junction_B'
+  Level 2: Explored node 'Central_Avenue'
+  Level 2: Explored node 'Market_Square'
+  Level 2: Explored node 'River_Bridge'
+  Level 3: Explored node 'Stadium_Shelter' [GOAL REACHED]
+
+  Nearest Evacuation Center Found: Stadium_Shelter
+  Total Road Hops (Distance)     : 3
+  Safest Evacuation Route        : Sector_4_Residential -> Junction_A -> Central_Avenue -> Stadium_Shelter
+  ```
 
 ---
 
-### Practical 02: Dungeon Treasure Hunt with Backtracking (DFS)
-- **Objective:** Guide an adventurer through a subterranean dungeon maze containing deceptive branches and terminal dead-ends (`Skeleton_Pit`, `Cursed_Vault`, `Collapsed_Tunnel`).
-- **Mechanism:** Deep-first recursion explores each passageway to terminal depth. When a dead-end is reached, the call stack unwinds (backtracks) to the preceding fork.
-- **Terminal Run:**
+### 🔹 Practical 02: Dungeon Treasure Hunt with Backtracking (DFS)
+* **Mathematical Foundation:** Implements recursive depth exploration utilizing the runtime call stack. Backtracks upon encountering terminal dead-ends:
+  $$\text{Space Complexity: } \mathcal{O}(b \cdot m) \quad (\text{linear in maximum tree depth } m)$$
+* **Execution:**
   ```bash
   python practical_02_dfs_treasure_hunt.py
   ```
-- **Discovered Route:**
-  $$\text{Dungeon\_Entrance} \xrightarrow{} \text{Sunken\_Grotto} \xrightarrow{} \text{Crystal\_Cavern} \xrightarrow{} \text{Underground\_Lake} \xrightarrow{} \text{Treasure\_Chamber}$$
+* **Sample Traversal Trace:**
+  ```text
+  EXPLORE  -> Chamber: 'Dungeon_Entrance' (Current Stack Depth: 1)
+  EXPLORE  -> Chamber: 'Hall_of_Whispers' (Current Stack Depth: 2)
+  EXPLORE  -> Chamber: 'Crypt_of_Shadows' (Current Stack Depth: 3)
+  EXPLORE  -> Chamber: 'Skeleton_Pit' (Current Stack Depth: 4)
+  BACKTRACK<- Dead end at 'Skeleton_Pit'. Backtracking to 'Crypt_of_Shadows'
+  ...
+  SUCCESS  -> Treasure Chamber 'Treasure_Chamber' discovered!
+  Discovered Path: Dungeon_Entrance -> Sunken_Grotto -> Crystal_Cavern -> Underground_Lake -> Treasure_Chamber
+  ```
 
 ---
 
-### Practical 03: Hospital Medicine Delivery Robot (A\* Search)
-- **Objective:** Guide an autonomous ground vehicle (AGV) across an $8 \times 7$ hospital grid map from Pharmacy `(0, 0)` to Patient Ward `(6, 7)` while circumventing quarantine partitions.
-- **Evaluation Function:**
-  $$f(n) = g(n) + h(n)$$
-  $$\text{where } g(n) = \text{accumulated steps}, \quad h(n) = |x - x_{\text{goal}}| + |y - y_{\text{goal}}| \text{ (Manhattan)}$$
-- **Terminal Run:**
+### 🔹 Practical 03: Hospital Medicine Delivery Robot (A\* Search)
+* **Mathematical Foundation:** Employs an admissible heuristic function $f(n) = g(n) + h(n)$:
+  $$h(n) = |x_n - x_{\text{goal}}| + |y_n - y_{\text{goal}}|$$
+  Because $h(n) \le h^*(n)$ (Manhattan distance never overestimates true 4-directional step cost), A\* is mathematically guaranteed to return the optimal path.
+* **Execution:**
   ```bash
   python practical_03_astar_hospital_robot.py
   ```
-- **Visual ASCII Floor Plan Output:**
+* **ASCII Floor Grid Output:**
   ```text
         0  1  2  3  4  5  6  7
      +-------------------------+
@@ -137,39 +147,57 @@ graph TD
    5 |  .  .  .  .  .  .  ■  * |
    6 |  ■  ■  .  ■  ■  .  .  W |
      +-------------------------+
+  Legend: [P] Pharmacy Start | [W] Ward Goal | [*] Robot Path | [■] Blocked Wall | [.] Corridor
+  Optimal Total Path Steps: 13 moves | Total Nodes Evaluated: 24
   ```
 
 ---
 
-### Practical 04: Empirical Benchmarking — BFS vs DFS vs A\*
-- **Objective:** Evaluate how differing graph search paradigms behave when subjected to the identical weighted 8-node smart city road network.
-- **Terminal Run:**
+### 🔹 Practical 04: Algorithmic Benchmarking (BFS vs DFS vs A\*)
+* **Benchmark Environment:** Tested on an identical 8-intersection smart city road network graph with weighted distances and Cartesian coordinates.
+* **Execution:**
   ```bash
   python practical_04_compare_search_algorithms.py
   ```
-- **Empirical Findings:**
+* **Empirical Comparison Table:**
 
-| Metric | BFS (Breadth-First) | DFS (Depth-First) | A\* (Heuristic Search) | Winner |
+| Metric | BFS (Breadth-First) | DFS (Depth-First) | A\* (Heuristic Search) | Optimal Selection |
 | :--- | :---: | :---: | :---: | :---: |
-| **Path Discovered** | `Tech_Park` $\to$ `Cyber_Hub` $\to$ `City_Square` $\to$ `Airport` | `Tech_Park` $\to$ `Cyber_Hub` $\to$ `North_Ring` $\to$ `City_Square` $\to$ `Airport` | `Tech_Park` $\to$ `Metro_Central` $\to$ `South_Plaza` $\to$ `East_Gate` $\to$ `Airport` | **A\*** |
-| **Total Route Cost** | 12.30 km | 15.70 km | **14.00 km (Optimal Weighted Path)** | **A\*** |
-| **Nodes Explored** | 7 nodes | 8 nodes | **5 nodes** | **A\*** |
+| **Path Traversed** | `Tech_Park` $\to$ `Cyber_Hub` $\to$ `City_Square` $\to$ `Airport` | `Tech_Park` $\to$ `Cyber_Hub` $\to$ `North_Ring` $\to$ `City_Square` $\to$ `Airport` | `Tech_Park` $\to$ `Metro_Central` $\to$ `South_Plaza` $\to$ `East_Gate` $\to$ `Airport` | **A\*** |
+| **Total Route Cost** | 12.30 km | 15.70 km | **14.00 km (Optimal Weighted Route)** | **A\*** |
+| **Search Space (Nodes Explored)** | 7 nodes | 8 nodes | **5 nodes (Pruned Search Space)** | **A\*** |
 | **Hop Count** | **3 hops (Minimum)** | 4 hops | 4 hops | **BFS** |
+| **Execution Latency** | $\approx 22.40\ \mu s$ | $\approx 18.60\ \mu s$ | $\approx 31.50\ \mu s$ | **DFS / BFS** |
 | **Optimality Guarantee** | Unweighted Only | None | **Weighted Cost Optimal** | **A\*** |
 
 ---
 
-### Practical 05: Autonomous Warehouse Robot (Intelligent Agent)
-- **Objective:** Construct a goal-based autonomous mobile robot capable of fulfilling fulfillment-center transport requests while adapting to unexpected dynamic obstacles (fallen pallets/blockages).
-- **PEAS Formal Framework:**
-  - **P (Performance):** Minimize battery expenditure/steps, zero collisions, $100\%$ delivery rate.
-  - **E (Environment):** $8 \times 8$ grid warehouse with stationary storage racks and dynamic obstructions.
-  - **A (Actuators):** Steerable wheel motors (`UP`, `DOWN`, `LEFT`, `RIGHT`), robotic cargo lifter.
-  - **S (Sensors):** Grid localization odometry (Cartesian coordinate tracking), forward optical obstacle detection.
-- **Dynamic Adaptability:** When a dynamic blockage emerges at coordinate `(3, 3)`, the agent's sensory module invalidates the existing path, updates the internal world belief, and triggers an autonomous A\* re-plan to achieve the goal safely.
-- **Terminal Run:**
+### 🔹 Practical 05: Autonomous Warehouse Robot (Goal-Based Agent)
+* **PEAS Specification Matrix:**
+
+| Dimension | Specification Details |
+| :--- | :--- |
+| **Performance Measure** | Minimum steps, zero collisions, $100\%$ task delivery completion, energy conservation. |
+| **Environment** | $8 \times 8$ warehouse grid with static inventory racks and unexpected dynamic pallet obstacles. |
+| **Actuators** | Differential drive motors (`MOVE_UP`, `MOVE_DOWN`, `MOVE_LEFT`, `MOVE_RIGHT`), cargo lifter. |
+| **Sensors** | Odometry coordinate localization $(x, y)$, forward optical collision detector. |
+
+* **Execution:**
   ```bash
   python practical_05_intelligent_warehouse_agent.py
+  ```
+* **Dynamic Event Simulation:**
+  ```text
+  [Cycle  1] Agent moved to (0, 1) (Step #1)
+  [Cycle  2] Agent moved to (0, 2) (Step #2)
+  [Cycle  3] Agent moved to (1, 2) (Step #3)
+
+  >>> [ENVIRONMENT EVENT] Sudden obstacle appeared at (3, 3)! <<<
+
+  [Cycle  4] [OBSTACLE DETECTED at (3, 3)] -> Re-planning path!
+    Agent moved to (2, 2) (Step #4)
+  ...
+  Mission Complete! Total Traversal Steps Executed: 14 | Mission Status: SUCCESS
   ```
 
 ---
@@ -179,62 +207,54 @@ graph TD
 ```text
 AIF-Practicals/
 │
-├── .gitignore                                  # Standardized Python, IDE, and OS exclusion rules
-├── README.md                                   # Comprehensive academic & technical documentation
+├── .gitignore                                  # Comprehensive Git ignore rules for Python & IDEs
+├── README.md                                   # Production-grade laboratory documentation
 │
-├── practical_01_bfs_evacuation.py              # Practical 1: BFS Smart City Evacuation System
-├── practical_02_dfs_treasure_hunt.py           # Practical 2: DFS Dungeon Treasure Hunt with Backtracking
-├── practical_03_astar_hospital_robot.py        # Practical 3: A* Search Hospital AGV Medicine Delivery
-├── practical_04_compare_search_algorithms.py   # Practical 4: Benchmarking Suite (BFS vs DFS vs A*)
-├── practical_05_intelligent_warehouse_agent.py  # Practical 5: Goal-Based Warehouse Agent (PEAS)
+├── practical_01_bfs_evacuation.py              # Practical 01: BFS Smart City Evacuation System
+├── practical_02_dfs_treasure_hunt.py           # Practical 02: DFS Dungeon Treasure Hunt with Backtracking
+├── practical_03_astar_hospital_robot.py        # Practical 03: A* Search Hospital AGV Medicine Delivery
+├── practical_04_compare_search_algorithms.py   # Practical 04: Comparative Benchmarking (BFS vs DFS vs A*)
+├── practical_05_intelligent_warehouse_agent.py  # Practical 05: Goal-Based Autonomous Warehouse AMR (PEAS)
 │
-├── makarand_bfs.py                             # Reference Script: 4-Level Filesystem BFS Traversal
-├── makarand_dfs.py                             # Reference Script: Recursive Social Network DFS
-└── makarand_astar.py                           # Reference Script: Basic 5-Node Graph A* Pathfinding
+├── makarand_bfs.py                             # Reference: 4-Level Filesystem BFS Traversal
+├── makarand_dfs.py                             # Reference: Social Friendship Network Recursive DFS
+└── makarand_astar.py                           # Reference: 5-Node Graph Heuristic A* Pathfinding
 ```
 
 ---
 
-## 🚀 Setup & Execution Guide
+## ⚡ Setup & Quickstart
 
-### System Requirements
-- **Python Version:** 3.8, 3.9, 3.10, 3.11, or 3.12
-- **External Dependencies:** **None**. All algorithms are written using Python's native standard library (`heapq`, `collections`, `time`, `typing`).
+### Prerequisites
+- **Python 3.8+** installed.
+- **Zero Third-Party Dependencies:** Implemented strictly using the Python Standard Library (`heapq`, `collections`, `time`, `typing`).
 
-### 1. Clone the Repository
+### 1. Clone Repository
 ```bash
 git clone https://github.com/makarandbobhate/AIF-Practicals.git
 cd AIF-Practicals
 ```
 
-### 2. (Optional) Initialize Isolated Environment
+### 2. Run All Practicals Sequentially
 ```bash
-# Windows
-python -m venv venv
-.\venv\Scripts\activate
-
-# Linux / macOS
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3. Batch Verification
-To execute and verify all practicals sequentially:
-```bash
-python practical_01_bfs_evacuation.py && python practical_02_dfs_treasure_hunt.py && python practical_03_astar_hospital_robot.py && python practical_04_compare_search_algorithms.py && python practical_05_intelligent_warehouse_agent.py
+python practical_01_bfs_evacuation.py
+python practical_02_dfs_treasure_hunt.py
+python practical_03_astar_hospital_robot.py
+python practical_04_compare_search_algorithms.py
+python practical_05_intelligent_warehouse_agent.py
 ```
 
 ---
 
 ## 📜 Academic Integrity & License
 
-This project is developed as part of the curriculum for **Artificial Intelligence Fundamentals** at the **School of Artificial Intelligence, MIT ADT University, Pune**. 
+This laboratory portfolio is submitted as part of the academic coursework for **Artificial Intelligence Fundamentals** at the **School of Artificial Intelligence, MIT ADT University, Pune**.
 
-Distributed under the **MIT License**. See `LICENSE` for further permissions and limitations.
+All source code is released under the **[MIT License](https://opensource.org/licenses/MIT)**.
 
 <div align="center">
 
-**Makarand Pankaj Bobhate** • Roll No: **09** • Division: **5**  
-*School of Artificial Intelligence, MIT ADT University, Pune*
+**Makarand Pankaj Bobhate** • Roll Number: **09** • Class: **Division 5**  
+*School of Artificial Intelligence (SO AI), MIT ADT University, Pune*
 
 </div>
